@@ -1,0 +1,156 @@
+ body, html {
+ 	background-color: #eee; 
+ 	height: 100%; 
+ 	width: 100%; 
+ 	min-height: 650px; 
+ 	min-width: 1000px; 
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .container {
+ 	display: flex;  
+ 	align-items: stretch; 
+ 	justify-content: center;
+ }
+
+ #graph, #matrix {
+ 	margin: 0; 
+ 	height: 100vh;
+ 	width: 44%;
+ }
+
+ #graph {
+ 	background-color: #333d56;
+ }
+
+ #matrix {
+ 	background-color: #0d1628;
+ 	flex-direction: column;
+ 	display: flex; 
+ 	align-items: center; 
+ 	justify-content: center;
+ }
+
+ #svggraph {
+ 	width: 100%; 
+ 	height: 100%; 
+ 	background-color: #e0e0e0; 
+ 	display: block; 
+ 	cursor: crosshair;  
+ 	background-color: #333d56;
+ }
+
+ .node {
+ 	stroke-width: 0;
+ 	fill: #ff7454; 
+ 	width:10px;
+ 	height:10px; 
+ 	border: none; 
+ 	background-color: #000; 
+ 	border-radius:100px;
+ }
+
+ .node:hover {
+ 	cursor: move;
+ }
+
+  .link {
+  	stroke: #ffffff; 
+  	stroke-width: 1; 
+  	fill: none;
+  }
+
+ .arcs {
+ 	stroke: #ffffff; 
+ 	stroke-width: 1;
+ }
+
+ .label {
+ 	text-anchor: middle; 
+ 	dominant-baseline: central; 
+ 	fill: #fff;
+ }
+
+ .matrixStyle { 	 
+ 	border: solid 1px; 
+ 	border-color:  #1adcff; 
+ 	margin: 0; 
+ 	padding: 0;  
+ 	text-align: center; 
+ 	color:#fff;
+ }
+
+ .matrixStyle:hover{
+ 	background-color:  #ff7454; 
+ }
+
+ .matrixStyleMain {
+    background-color: #1adcff; 
+    border: solid 1px; 
+    border-color: #1adcff;  
+    margin: 0; 
+    padding: 0;  
+    text-align: center;
+}
+
+ table {
+ 	border-collapse: collapse; 
+ 	margin: 0 auto; 
+ 	table-layout:fixed; 
+ 	border: solid 1px; 
+ 	border-color: #1adcff;
+ 	text-align: center;
+ }
+
+ td {
+ 	height: 40px; 
+ 	width:40px;
+ 	color: #fff;  
+ 	cursor: pointer; 
+ 	margin: 0; 
+ 	padding: 0;
+ }
+
+.flex-dir {
+ 	display: flex; 
+ 	flex-direction: row; 
+ 	justify-content: center; 
+ 	align-items: center;
+ }
+
+ th {
+ 	border: solid 1px #0d1628; 
+ 	color: #ff7454; 
+ 	width: 40px; 
+ 	height: 40px; 
+ 	margin: 0; 
+ 	padding: 0;
+ }
+
+ .btn {
+ 	border-radius: 5px; 
+ 	background-color: #ff7454;
+ 	border: none; 
+ 	text-align: center; 
+ 	padding: 10px; 
+ 	margin: 20px;
+ 	color: #fff;
+ 	height: 50px;
+ 	width: 80%;
+ }
+
+ #controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    width: 12%;
+    background-color: #0d1628;
+    position: bottom; 
+ }
+
+text{
+	cursor: move;
+}
